@@ -1,0 +1,311 @@
+<html lang="en">
+<head>
+  <title>RSAS</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</head>
+</script>
+
+
+<style>
+	/* Styling the area of the slides */
+	
+	#slideshow {
+	   
+		overflow: hidden;
+		height: 350px;
+		width:1400px;
+		margin: 1 auto;
+	}
+	
+	/* Style each of the sides
+	with a fixed width and height */
+	
+	.slide {
+		float: left;
+		height: 510px;
+		width: 728px;
+	}
+	
+	/* Add animation to the slides */
+	
+	.slide-wrapper {
+		
+		/* Calculate the total width on the
+	basis of number of slides */
+		width: calc(728px * 4);
+		
+		/* Specify the animation with the
+	duration and speed */
+		animation: slide 10s ease infinite;
+	}
+	
+
+	
+	/* Define the animation
+	for the slideshow */
+	
+	@keyframes slide {
+		
+		/* Calculate the margin-left for
+	each of the slides */
+		20% {
+			margin-left: 0px;
+		}
+		40% {
+			margin-left: calc(-728px * 1);
+		}
+		60% {
+			margin-left: calc(-728px * 2);
+		}
+		80% {
+			margin-left: calc(-728px * 3);
+		}
+		
+	}
+	#R:hover {
+color: blue;
+background-color:lime;
+}
+#l{
+background-image:url("https://ak.picdn.net/shutterstock/videos/5089/thumb/1.jpg");
+background-repeat:no-repeat;
+background-size:fit;}
+#h{
+background-image:url("https://i.pinimg.com/originals/44/f0/df/44f0df362bbcf1e1fdbf39190e2a3818.gif");
+background-repeat:no-repeat;
+background-size:fit;}
+
+.leftSideMenuNav {
+background-color:white;
+overflow-x: hidden;
+transition: 0.45s;
+z-index: 1;
+top: 0;
+left: 0;
+padding-top: 60px;
+height: 100%;
+width: 0;
+position: fixed;
+}
+.leftSideMenuNav a {
+padding: 7px 7px 7px 31px;
+text-decoration: none;
+display: block;
+transition: 0.4s;
+font-size: 28px;
+color:black;
+transition: 0.3s;
+font-family:bold;
+}
+.leftSideMenuNav a:hover {
+color: aqua;
+}
+.leftSideMenuNav .closeButton {
+position: absolute;
+top: 1;
+font-size: 37px;
+margin-left : 51px;
+right: 26px;
+margin-left: 51px;
+}
+@media screen and (max-height: 452px) {
+.leftSideMenuNav {
+padding-top: 16px;
+}
+.leftSideMenuNav a {
+font-size: 19px;
+}
+}
+</style>
+<body class="container-fluid " style="background-color:9BA3EB">
+
+<table class="container-fluid " style="background: linear-gradient(to bottom, #ff3300 -6%, #ff6699 100%);position:sticky;top:0;">
+<tr>
+<td ><img src="logo.png"  alt="logo" width="150" height="100" align="left" style="border-radius:50%;"></td>
+<td class="container-fluid"><p style="color:aqua;font-family:Arial Black;font-size:36px;" >STAY HOME AND SHOP ONLINE</p></td>
+<td class="container-fluid" width="40"><input type="search" style="font-size:16px;background-color:white;border-radius:10%"/></td>
+<td class="container-fluid"><a style="color:#ff1493;" href="https://www.google.com/" target="_self"><button type="submit" style="font-size:16px">search</button></a</td>
+<td class="container-fluid"><a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><button type="submit" style="font-size:11px;background-color:lime;"><abbr title="login for feed back">login</abbr></button></a></td>
+<td class="container-fluid"><a href="https://community.servicenow.com/53352102dbd0df048c8ef4621f96191d.iix"><button type="submit" style="font-size:11px;background-color:#cc7722;">logout</button></a></td>
+</tr>
+<tr style="background-color:#CCCCCC;color:#CCCCCC;">
+<td colspan="6" align="center">
+<a href="#e"><button id="R">ABOUT</button></a>_____
+<a href="#MN"><button id="R">CONTACT</button></a>_____
+<a href="mailto:saisatyambagadi@gmail.com"><button id="R">FEED BACK</button></a></td>
+</tr>
+</table>
+<div class="container-fluid" style="background-color:#004040;color:yellow;">
+<div id="leftSideMenu" class="leftSideMenuNav" style="background: linear-gradient(to bottom, #ffcc00 -6%, #33cc33 98%);">
+<a href="javascript:void(0)" class="closeButton"
+onclick="closeLeftMenu()">&times;</a>
+<a href="https://www.amazon.in/gp/new-releases/?ref_=nav_cs_newreleases">NEW RELEASES</a>
+<a href="https://www.amazon.in/gp/bestsellers/?ref_=nav_cs_bestsellers">BEST SELLER</a>
+<a href="https://www.amazon.in/home-products-sale/b?ie=UTF8&node=12414705031">HOME FURNITURES</a>
+<a href="https://www.amazon.in/b?node=1571274031&pf_rd_r=ATM6WJ8K3NC6DJS02G3Y&pf_rd_p=a4ab5c46-a716-42dd-aae5-708c31460b14&pd_rd_r=8643ab1b-5918-41ab-8279-c1a5e7878abe&pd_rd_w=NNyTJ&pd_rd_wg=DQT6p&ref_=pd_gw_unk">BABY PRODUCTS</a>
+<a href="https://pharmeasy.in/">PHARMACY</a> 
+</div>
+
+
+<span style="font-size: 30px; cursor: pointer" onclick="openLeftMenu()">☰
+MORE</span>
+
+<script>
+function openLeftMenu() {
+document.getElementById("leftSideMenu").style.width = "255px";
+}
+function closeLeftMenu() {
+document.getElementById("leftSideMenu").style.width = "0";
+}
+</script>
+</div>
+<br>
+<div class="container-fluid" style="background-color:white;">
+<ul class="list-inline" class="container-fluid">
+<li class="list-inline-item " style="color:white">___</li>
+<li class="list-inline-item" style="color:660033" ><a href="https://www.flipkart.com/search?q=headphones&sid=0pm%2Cfcn&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&as-pos=1&as-type=RECENT&suggestionId=headphones%7CHeadphones&requestId=8feb34bb-7563-48a4-8966-5c7e91ddc063&as-backfill=on"> <img src="https://monophy.com/media/Ovnvwsh4otawX9YyCz/monophy.gif" style="border-radius:50%;" width="100" height="100"><figcaption style="text-align:center;">HEAD PHONES</figcaption></a>
+</li>
+<li class="list-inline-item" style="color:white">___</li>
+<li class="list-inline-item" style="color:660033" ><a href="https://www.flipkart.com/search?q=GROCERIES&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"> <img src="https://media.baamboozle.com/uploads/images/47208/1635783349_173902_gif-url.gif" style="border-radius:50%;" width="100" height="100"><figcaption style="text-align:center;">GROCERIES</figcaption></a>
+<li class="list-inline-item" style="color:white">___</li>
+
+<li class="list-inline-item" style="color:660033" ><a href="https://www.flipkart.com/search?q=mobiles&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"> <img src="https://media3.giphy.com/media/l0Iy3UlnImRamp45y/giphy.gif" style="border-radius:50%;" width="100" height="100"><figcaption style="text-align:center;">MOBILES</figcaption></a>
+</li>
+<li class="list-inline-item" style="color:white">___</li>
+<li class="list-inline-item" style="color:660033" > <a href="https://www.flipkart.com/search?q=laptops&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"> <img src="https://i.makeagif.com/media/4-24-2016/_ZvEfu.gif" style="border-radius:50%;" width="110" height="96"><figcaption style="text-align:center;">LAPTOPS</figcaption></a></li>
+<li class="list-inline-item" style="color:white">___</li>
+<li class="list-inline-item" style="color:660033" > <a href="https://www.flipkart.com/search?q=SHOES&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"> <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Skechers_Elite_Flex_shoe.gif" style="border-radius:50%;" width="120" height="110"><figcaption style="text-align:center;">SHOES</figcaption></a></li>
+<li class="list-inline-item" style="color:white">___</li>
+
+<li class="list-inline-item" style="color:660033" ><a href="https://www.flipkart.com/search?q=MEMORY%20CARD&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"> <img src="https://media1.giphy.com/media/3otO6xRxnsZ8213SJa/giphy.gif?cid=6c09b952gkcfvnizaeqr5livjevr2zp5h5k9lha7osaumlde&rid=giphy.gif&ct=s" style="border-radius:50%;" width="100" height="100"><figcaption style="text-align:center;">MEMORY CARDS</figcaption></a>
+</li>
+<li class="list-inline-item" style="color:white">___</li>
+<li class="list-inline-item" style="color:660033" > <a href="https://www.flipkart.com/search?q=WATCHES&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"> <img src="https://starbaseatlanta.com/wp-content/uploads/miupg0219a.gif" style="border-radius:50%;" width="105" height="110"><figcaption style="text-align:center;">WATCHES</figcaption></a></li>
+<li class="list-inline-item" style="color:white">___</li>
+<li class="list-inline-item" style="color:660033" > <a href="https://www.flipkart.com/search?q=TOYS&otracker=AS_Query_HistoryAutoSuggest_4_0&otracker1=AS_Query_HistoryAutoSuggest_4_0&marketplace=FLIPKART&as-show=on&as=off&as-pos=4&as-type=HISTORY&as-backfill=on"> <img src="https://i.pinimg.com/originals/91/d4/47/91d447a28ef6b5112721392030afcf9c.gif" style="border-radius:70%;" width="110" height="105"><figcaption style="text-align:center;">TOYS</figcaption></a></li>
+<li class="list-inline-item" style="color:white">___</li>
+<li class="list-inline-item" style="color:660033" > <a href="https://www.flipkart.com/search?q=TV&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJbW-Y5r0CB4rddLXSLpsr_zw1K6Mrgf3Kug&usqp=CAU" style="border-radius:45%;" width="100" height="100"><figcaption style="text-align:center;">T.V's</figcaption></a></li>
+<li class="list-inline-item" style="color:white">___</li>
+<li class="list-inline-item" style="color:660033" > <a href="https://www.flipkart.com/search?q=FRIDGE&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"> <img src="https://i.gifer.com/RKbI.gif" style="border-radius:50%;" width="102" height="104"><figcaption style="text-align:center;">FRIDGES</figcaption></a></li>
+<li class="list-inline-item" style="color:white">___</li>
+<li class="list-inline-item" style="color:660033" > <a href="https://www.flipkart.com/search?q=washing+machines&sid=j9e%2Cabm%2C8qx&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_7_na_na_na&as-pos=1&as-type=RECENT&suggestionId=washing+machines%7CWashing+Machines&requestId=1c5c9d12-8bf0-4a23-b230-e3cc5b404d20&as-backfill=on"><span style="color:WHITE;">__</span><img src="https://media0.giphy.com/media/3ohhwvBqI1BE1o3196/giphy.gif" style="border-radius:0%;" width="110" height="110"><figcaption style="text-align:center;">WASHING MACHINES</figcaption></a></li>
+<li class="list-inline-item" style="color:white">___</li>
+<li class="list-inline-item" style="color:660033" > <a href="https://www.flipkart.com/search?q=microwave+oven&sid=j9e%2Cm38%2Co49&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&as-pos=1&as-type=RECENT&suggestionId=microwave+oven%7CMicrowave+Ovens&requestId=8c2b22b1-df92-498e-a04d-b1638eb58f12&as-backfill=on"> <img src="https://c.tenor.com/qwC9lHAvAMcAAAAM/microwave.gif" style="border-radius:60%;" width="102" height="104"><figcaption style="text-align:center;">MICROWAVE OVENS</figcaption></a></li>
+<li class="list-inline-item" style="color:white">___</li>
+<li class="list-inline-item" style="color:660033" > <a href="https://www.flipkart.com/search?q=beauty+products&sid=g9b%2Cffi%2Cttr%2Cniq&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_2_7_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_2_7_na_na_na&as-pos=2&as-type=RECENT&suggestionId=beauty+products%7CEye+Makeup+Combo&requestId=5e265269-ed8b-4fb0-8dac-f2aa30bc204c&as-backfill=on"> <img src="https://i.gifer.com/J5LR.gif" style="border-radius:50%;" width="102" height="104"><figcaption style="text-align:center;">BEAUTY PRODUCTS</figcaption></a></li>
+ <li class="list-inline-item" style="color:white">___</li>
+<li class="list-inline-item" style="color:660033" > <a href="https://www.flipkart.com/search?q=shirts%20&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"> <img src="https://c.tenor.com/zF80uX7GB3sAAAAM/shirt.gif" style="border-radius:50%;" width="102" height="104"><figcaption style="text-align:center;">DRESSES</figcaption></a></li>
+<li class="list-inline-item" style="color:white">___</li>
+<li class="list-inline-item" style="color:660033" > <a href="https://www.flipkart.com/search?q=furniture&sid=wwe%2C7p7%2C4yf&as=on&as-show=on&otracker=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_9_na_na_na&as-pos=1&as-type=RECENT&suggestionId=furniture%7CBeds&requestId=cc4a2870-8a27-469f-91d1-356ac594cb07&as-backfill=on"> <img src="https://media0.giphy.com/media/W5lGWpg5JsfhEzWoLO/giphy.gif" style="border-radius:50%;" width="102" height="104"><figcaption style="text-align:center;">FURNITURES</figcaption></a></li>
+  <li class="list-inline-item" style="color:white">___</li>
+<li class="list-inline-item" style="color:660033" > <a href="https://www.amazon.in/s?rh=n%3A20538600031&language=en_IN&brr=1&rd=1"> <img src="https://i.gifer.com/3mJF.gif" style="border-radius:0%;" width="102" height="104"><figcaption style="text-align:center;">SPECIAL DISCOUNT</figcaption></a></li>
+
+</ul></div>
+<H4 style="color:orange;background-color:#064663;"><B><center>OFFER ZONE</center></B></H4>
+<div id="slideshow" class="container">
+		<div class="slide-wrapper" >
+			
+			<!-- Define each of the slides
+		and write the content -->
+			<div class="slide" id="l"><br>
+			<CENTER>
+				<a href="https://www.amazon.in/s?k=mega+offer&i=todays-deals&crid=3K2OVU26493VI&sprefix=mega+offer%2Ctodays-deals%2C748&ref=nb_sb_noss_2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq2Ck41BY0sdJk-T1_wFyL9oWhG6-ucdgvvYXx8S3yURjY7iFY4Rh4Wp8_XuvvAUK3pUQ&usqp=CAU" style="height: 290px; width:310px;"></a>
+			</img></center>
+			</div>
+			<div class="slide" id="l"><br>
+			<CENTER>
+				<a href="https://www.amazon.in/s?rh=n%3A20538600031&language=en_IN&brr=1&rd=1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzkMl_954d96FgCx13rvRLbEMhCdjnl6mQ0j6aeBxwxJfVjUUxsXr9i8d1Y4jnh2WEGH4&usqp=CAU" style="height: 290px; width:310px;"></a>
+				</img></CENTER>
+			</div>
+			<div class="slide" id="l"><br>
+			<CENTER>
+				<a href="https://www.amazon.in/s?k=combo+offer&i=todays-deals&ref=nb_sb_noss"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ603Qai8lJPmGVSbldLH8Wk9vncTeKNo5WENhp8eMjerCtPhCtDp7gE_NnAQNsm5CzOI&usqp=CAU" style="height: 290px; width:310px;"></a>
+				</img></CENTER>
+			</div>
+			<div class="slide" id="l"><br><CENTER>
+				<a href="https://www.amazon.in/gp/goldbox/?ie=UTF8&ref=nav_topnav_deals&pd_rd_w=cLrEj&pf_rd_p=78c9b567-1104-4e60-a4cc-720319b5249d&pf_rd_r=0SMSHD9AYZ9P9344RTE1&pd_rd_r=02047ab2-9e4a-47c9-87f8-efae6b1718b8&pd_rd_wg=gotS2&ref_=pd_gw_unk"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxsyTYBXok6iltqPhutiN3COIaCpG0l50Ac6hPv1daD5y2Df8zHrJx3azAJ7czqizqqoQ&usqp=CAU" style="height: 290px; width:310px;"></a>
+				</img></CENTER>
+			</div>
+		</div>
+	</div><br>
+
+<div width="50%" style="font-size:17px;" scrollamount="10">
+<h5 style="color:black;background-color:GOLD;text-align:center;"><b>10 % off on electronics <a href="https://www.amazon.in/b?node=28207169031&pf_rd_r=0SMSHD9AYZ9P9344RTE1&pf_rd_p=af68964e-5852-4b50-925f-c6060dfadf18&pd_rd_r=a30d5228-9fbb-4dcd-bceb-7fddeb93dc6d&pd_rd_w=WK8vA&pd_rd_wg=TzcQr&ref_=pd_gw_unk" style="color:red;"><b>order now</b></a></b></h5>
+<h5 style="color:black;background-color:ORANGE;text-align:center;"><b>items with 80% off <a href="https://www.myntra.com/myntra-fashion-store?rf=Discount%20Range%3A80.0_100.0_80.0%20TO%20100.0" style="color:red;"><b>order now</b></a></b></h5>
+<h5 style="color:black;background-color:#B8F1B0;text-align:center;"><b>items with 60% off <a href="https://www.myntra.com/myntra-fashion-store?rf=Discount%20Range%3A60.0_100.0_60.0%20TO%20100.0" style="color:red;"><b>order now</b></a></b></h5>
+
+</div>
+<H4 style="color:orange;background-color:#064663;color:#064663;"><B><center>_</center></B></H4>
+<table  border=10	class="container" style="border-color:orange;background-color:white;" height="150">
+<tr >
+<td width="100"><a href="https://www.flipkart.com/search?q=BOTTLES&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img  height="210"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhhu-pPHp8gYUIU3IIm-nXbotDmHxCgcmhiP3x_90r1Uzm4UilHTMkbfoR1XhAxpWq0s4&usqp=CAU" class="container-fluid " alt="image" width="100"><center><span>BOTTLES</span></center></img></a></td>
+<td width="100"><a href="https://www.flipkart.com/search?q=COOLING%20GLASSES&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img  height="210"  src="https://m.media-amazon.com/images/I/41YoPwpxs9L._UX569_.jpg" class="container-fluid " alt="image" width="100"><center><span class="text-capitalize">COOLING GLASSES</span></center></img></a></td>
+<td width="100"><a href="https://www.flipkart.com/search?q=MIXER%20AND%20GRAINDER&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img  height="210"  src="https://cdn.shpy.in/46103/1624978790898_SKU-0055_0.jpeg?" class="container-fluid " alt="image" width="100"><center><span class="text-capitalize">MIXER AND GRAINDER</span></center></img></a></td>
+</tr>
+
+<tr>
+<td width="100"><a href="https://www.flipkart.com/search?q=AIR%20CONDITIONERS&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img  height="210" src="https://static.toiimg.com/img/82128391/Master.jpg" class="container-fluid " alt="image" width="100"><center><BR><span> AIR CONDITIONERS</span></center></img></a></td>
+<td width="100"><a href="https://www.flipkart.com/search?q=CHAIRS&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img  height="210"  src="https://5.imimg.com/data5/OJ/KK/MY-27863029/web-plastic-chairs-500x500.jpg" class="container-fluid " alt="image" width="100"><center><span>CHAIRS</span></center></img></a></td>
+<td width="100"><a href="https://www.flipkart.com/search?q=BOOKS%20AND%20PENS&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img  height="210"  src="https://rukminim1.flixcart.com/image/416/416/klmmrgw0/diary-notebook/q/h/o/notes-02-family-store-original-imagyzwmnntnhhzt.jpeg?q=70" class="container-fluid " alt="image" width="100"><center><BR><span>BOOKS AND PENS</span></center></img></a></td>
+</tr>
+<tr>
+<td width="100"><a href="https://www.flipkart.com/search?q=CICKET%20&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img  height="210"  src="https://media.istockphoto.com/photos/balls-isolated-on-white-picture-id175005911?k=20&m=175005911&s=612x612&w=0&h=fFJYJngzaOjvb3f-TI1uDsQt-Ad3AXQ75zw1OwlRzu0=" class="container-fluid " alt="image" width="100"><center><BR><span>SPORTS ITEMS</span></center></img></a></td>
+<td width="100"><a href="https://www.flipkart.com/search?q=photo%20frames&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img  height="210"  src="https://cdn.shopclues.com/images/thumbnails/42342/320/320/photosframe141470384675.png" class="container-fluid " alt="image" width="100"><center><span>PHOTO FRAMES</span></center></img></a></td>
+<td width="100"><a href="https://www.flipkart.com/search?q=MOUSE%20AND%20KEYBOARD&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=on&as=off"><img  height="210"  src="http://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/peripherals/input-devices/dell/keyboards/km5221w/pdp/dell-keyboard-mouse-km5221w-pdp-campaign-hero-504x350.jpg?fmt=jpg&wid=504&hei=350" class="container-fluid " alt="image" width="100"><center><span>MOUSE AND KEYBOARD</span></center></img></a></td>
+
+</tr>
+</table>
+<BR>
+<table class="container"  style="background-color:aqua;" >
+<tr style="text-align:center;">
+<th colspan="3"><h2 style="background-color:DFF6FF;"><b>COMPLETE YOUR STYLE WITH TOP BRANDS</b></h1></th></tr>
+<tr>
+<tr style="text-align:center;" >
+<TD style="background-color:yellow;" width=300><A HREF="https://uspoloassn.in/"><IMG class="container-fluid "  height="300" width=400 SRC="https://www.thegalleriamalljordan.com/sites/default/files/us-polo-assn-gf.png"></IMG></A></TD>
+<td style="background-color:#CCCCCC;" width=300><A HREF="https://www.armani.com/en-in/emporio-armani/man/clothing"><IMG class="container-fluid " height="300"  SRC="https://th.bing.com/th/id/R.4a592bdabcb9cf8fb8a56ea9fe1e4364?rik=XMy0YFIZuG4Sow&riu=http%3a%2f%2flofrev.net%2fwp-content%2fphotos%2f2017%2f04%2femporio_armani_logo.png&ehk=YB6qLzprbCYwC4c8v6csSFT8daZ5jiK5CNVnBypNY3A%3d&risl=&pid=ImgRaw&r=0"></IMG></A></td>
+<TD width=300 style="background-color:C70A80;"><A HREF="https://www.gucci.com/us/en/"><IMG class="container-fluid " height="300"  SRC="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Gucci_logo.svg/1200px-Gucci_logo.svg.png"></IMG></A></TD></TR>
+<TD style="background-color:lime;" width=300><A HREF="https://www.patek.com/en/home"><IMG class="container-fluid "  height="300" width=400 SRC="https://th.bing.com/th/id/R.277f4466263672d21cf5a2567714fe1a?rik=teWTyQtLYiw59w&riu=http%3a%2f%2flogos-download.com%2fwp-content%2fuploads%2f2016%2f06%2fPatek_Philippe_Geneve_logo.png&ehk=Q9QbqQWfy5VkERUvjZUWJoixoFm5wgF8yaLmt1VMlcM%3d&risl=&pid=ImgRaw&r=0"></IMG></A></TD>
+<td style="background-color:red;" width=300><A HREF="https://www.nike.com/in/w/mens-running-shoes-37v7jznik1zy7ok"><IMG class="container-fluid " height="300"  SRC="https://th.bing.com/th/id/R.7ecb22fd61fcaf57bf8b9a17b0098a63?rik=TPhIcpZgIBuO4A&riu=http%3a%2f%2fpngimg.com%2fuploads%2fnike%2fnike_PNG12.png&ehk=S%2bcMWpHgbfcTZOdLleeHaSQtTCy%2fJlsSgGQ343nc5DY%3d&risl=&pid=ImgRaw&r=0"></IMG></A></td>
+<TD width=300 style="background-color:#B09B71;"><A HREF="https://www.dolcegabbana.com/en/men/accessories/belts/"><IMG class="container-fluid " height="300"  SRC="https://th.bing.com/th/id/R.4b40ed786775f259c39f227b9479fd9b?rik=bgozFiqXu%2bxVzw&riu=http%3a%2f%2fpngimg.com%2fuploads%2fdolce_gabanna%2fdolce_gabanna_PNG14.png&ehk=P%2bU5AOS81zRHpg8Xjm4Z253j%2bHmsFZrVoO1nPMwOSTM%3d&risl=&pid=ImgRaw&r=0"></IMG></A></TD></TR>
+</table>
+<BR>
+<table class="container"  style="background-color:06283D;">
+<tr style="text-align:center;">
+<th colspan="3"><h2 style="background-color:DFF6FF;"><b>TRAVEL AROUND THE WORLD</b></h1></th></tr>
+<tr>
+<tr style="text-align:center;" >
+<TD width=300><IMG class="container-fluid "  height="500" width=400 SRC="https://thumbs.dreamstime.com/b/travel-adventure-tourism-poster-realistic-d-traveling-car-other-item-elements-above-globe-map-famous-world-landmarks-149348125.jpg"></IMG></TD>
+<td width=300><IMG class="container-fluid " height="500"  SRC="https://www.kindpng.com/picc/m/74-744647_welcome-to-travelling-trev-poster-world-tourism-day.png"></IMG></td>
+<TD width=300><IMG class="container-fluid " height="500"  SRC="https://cdn2.vectorstock.com/i/1000x1000/36/41/travel-and-tour-poster-design-around-the-world-vector-21353641.jpg"></IMG></TD></TR>
+<tr style="text-align:center;"><BR>
+<th colspan="3"><A HREF=""><button style="background-color:lime;font-size:20px;"><h4 style="color:red;"><b>BOOK NOW</b></h4></A></button></th></tr>
+</table>
+
+
+
+<div class="container text-capitalize" style="background-color:black;color:white;" id="e"><br>
+<P style="background-color:white;color:blue;font-size:25px;text-align:CENTER;"><B>ABOUT</B></P>
+<p class="text-justify" style="background-color:black;color:white;font-size:15px">hi,my name is sai satyam.bagadi, i am currently looking for an internship in web development . I Like designing web sites ,Why because designing web sites is based on one's 
+creativity it is different from person to person , The intersting thing in web designing is we can see the colorful output for the code ,that we 
+write.So it is going to very intersting while creating beautiful design's or patterens on the screen .more over we can make client's to understand things more quickly and 
+effectively usinig designed web sites and, we can also attract people through designed web sites. Now-a-days full stack web development has more scope and it is increasing day to day.
+I got a first price in web designing which was conducted on my college fest , Which gives me more confident to become a web developer
+My aim is to design best web sites which makes me and my company proud</p>
+<center>
+<iframe src="saisatyam.pdf" style="height:600px;width:800px;"></iframe>
+</center><br>
+<span style="color:yellow;background-color:black;"> <B>
+<span style="background-color:YELLOW;color:RED;">NOTE </span>THIS
+WEBSITE IS JUST A DEMO PROJECT CREATED ON INTERNSHIP PURPOSE HAVING ONLY FRONT END DESIGN AND BACKEND IS NOT MAINTAINED AND LINK'S IN THIS WEBSITE ARE DIVERTS THE CUSTOMER TO SOME OTHER ORIGINAL ONLINE SHOPING WEBSITES</B></SPAN>
+</div>
+<H4 style="color:orange;background-color:#064663;color:#064663;"><B><center>_</center></B></H4>
+<div CLASS="container text-capitalize" style="background-color:black;"><br>
+<P style="background-color:white;color:blue;font-size:25px;text-align:CENTER;" ID="MN"><B>CONTACT</B></P>
+<p style="color:red;font-size:20px;text-align:center;">EMAIL : <span ><A href="mailto:saisatyambagadi@gmail" style="color:lime;">saisatyambagadi@gmail</A></span></P>
+<p style="color:red;font-size:20px;text-align:center;">pHONE NO : <span><A style="color:lime;">6306953672</A></span></P>
+</DIV>
+</body>
+</html>
